@@ -18,9 +18,10 @@ class ViewController: UIViewController {
         label.text = "メタモン"
         label.textAlignment = .center
         label.backgroundColor = .systemPink
+        // オートレイアウト使用するためfalseにする
         label.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(label)
-        
+        // コードでオートレイアウト制約
         NSLayoutConstraint.activate([
             label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             label.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
