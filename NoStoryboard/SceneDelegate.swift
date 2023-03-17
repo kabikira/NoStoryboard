@@ -14,9 +14,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         //UIWindowのアンラップ
-        guard let secene = (scene as? UIWindowScene) else { return }
+        guard let scene = (scene as? UIWindowScene) else { return }
         // window生成
-        let window = UIWindow(windowScene: secene)
+        let window = UIWindow(windowScene: scene)
         // ルートビュー指定
         window.rootViewController = ViewController()
         // キーウインドウ指定
